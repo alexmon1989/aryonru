@@ -1,0 +1,70 @@
+top-menu:
+  main: Главная
+  about: О компании
+  news: Новости
+  catalog: Каталог
+  contacts: Обратная связь
+
+footer-menu:
+  info: Инфо
+  about: О компании
+  contacts: Обратная связь
+  blog: Блог
+  news: Новости
+  support: Поддержка
+  callme: Перезвонить мне
+  copyright: Aryon © Все права защищены
+  
+others:
+  title: Художественный цветной металл
+  callme: Перезвонить мне
+  search: Поиск
+  readmore: Читать далее
+  
+auth:
+  enter: Войти на сайт
+  
+articles:
+  created: Дата создания
+  
+store:
+  promotions: Акционнные товары
+  promotion: Акция
+  money: руб.
+  to_cart: В корзину
+  cart: Корзина
+  discount: Скидка
+  price: Цена
+  total_price: Итоговая стоимость
+  total_items: Всего товаров
+  categories: Категории
+  category: Категория
+  categories_all: Все
+  items: Товары
+  details: Подробнее
+  noimage: Изображение+отсутствует
+  pages: Страницы
+  details: Детали товара
+  description: Описание
+  title: Название
+  items_in_cart: товаров
+  add_in_cart: Вы добавили товар в корзину!
+  goto_pay: Перейти к оплате
+  continue_buying: Продолжить покупки
+  sorting: Сортировка
+  sorting_by_price: По цене
+  sorting_by_novelty: По новизне
+  sorting_by_alphabet: По алфавиту
+  sorting_by_promotions: Акционные товары
+  picture: Изображение
+  recalculate_price: Пересчитать стоимость
+  
+callme:
+  coordinats: Оставьте свои координаты
+  error: Все поля должны быть заполнены.
+  success: Спасибо, наши менеджеры свяжутся с Вами в ближайшее время. Вы можете закрыть это окно.
+  username: ФИО
+  telephone: Телефон
+  message: Сообщение
+  send: Отправить
+  loading: Загрузка. Пожалуйста, подождите...

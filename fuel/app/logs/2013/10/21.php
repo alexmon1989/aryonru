@@ -1,0 +1,5 @@
+<?php defined('COREPATH') or exit('No direct script access allowed'); ?>
+
+WARNING - 2013-10-21 13:41:49 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-10-21 13:41:59 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+ERROR - 2013-10-21 13:41:59 --> Error - SQLSTATE[42S02]: Base table or view not found: 1146 Table 'store-dev.items' doesn't exist with query: "SELECT `t0`.`id` AS `t0_c0`, `t0`.`category_id` AS `t0_c1`, `t0`.`price` AS `t0_c2`, `t0`.`photo_name` AS `t0_c3`, `t0`.`is_promotion` AS `t0_c4`, `t0`.`discount` AS `t0_c5`, `t0`.`created_at` AS `t0_c6`, `t0`.`updated_at` AS `t0_c7`, `t1`.`id` AS `t1_c0`, `t1`.`title` AS `t1_c1`, `t1`.`created_at` AS `t1_c2`, `t1`.`updated_at` AS `t1_c3` FROM `items` AS `t0` LEFT JOIN `items_categories` AS `t1` ON (`t0`.`category_id` = `t1`.`id`) ORDER BY `t0`.`id` DESC" in D:\xampp\htdocs\store-dev\fuel\core\classes\database\pdo\connection.php on line 208

@@ -1,0 +1,70 @@
+top-menu:
+  main: Main page
+  about: About us
+  news: News
+  catalog: Catalog
+  contacts: Contacts
+  
+footer-menu:
+  info: Info
+  about: About
+  contacts: Contacts
+  blog: Blog
+  news: News
+  support: Support
+  callme: Call me
+  copyright: Aryon © All rights reserved
+  
+others:
+  title: Art-ferrous metal
+  callme: Call me  
+  search: Search
+  readmore: Read more
+  
+auth:
+  enter: Enter to the site
+  
+articles:
+  created: Created
+  
+store:
+  promotions: Promotions
+  promotion: Promotion
+  money: $
+  to_cart: Add to cart
+  cart: Cart
+  discount: Discount
+  price: Price
+  total_price: Total price
+  total_items: Total items
+  categories: Categories
+  category: Category
+  categories_all: All
+  items: Items
+  details: Details
+  noimage: No+image
+  pages: Pages
+  details: Item's details
+  description: Description
+  title: Title
+  items_in_cart: items
+  add_in_cart: You added an item to the cart!
+  goto_pay: Go to payment
+  continue_buying: Continue buying
+  sorting: Sorting
+  sorting_by_price: By price
+  sorting_by_novelty: By novelty
+  sorting_by_alphabet: By alphabet
+  sorting_by_promotions: Promotions
+  picture: Picture
+  recalculate_price: Recalculate price
+  
+callme:
+  coordinats: Please, give your coordinats
+  error: Все поля должны быть заполнены.
+  success: Спасибо, наши менеджеры свяжутся с Вами в ближайшее время. Вы можете закрыть это окно.
+  username: Name
+  telephone: Telephoone
+  message: Message
+  send: Send
+  loading: Loading. Please, wait a few moments...

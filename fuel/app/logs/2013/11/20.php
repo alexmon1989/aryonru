@@ -1,0 +1,135 @@
+<?php defined('COREPATH') or exit('No direct script access allowed'); ?>
+
+WARNING - 2013-11-20 10:24:17 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 10:24:26 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 10:24:27 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 10:24:44 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 10:24:44 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 10:24:52 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 10:24:52 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 10:25:00 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 10:25:00 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 10:25:09 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 10:25:09 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 10:25:12 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 10:25:12 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 10:25:29 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 10:49:20 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 10:49:24 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 10:53:21 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 10:53:26 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 10:53:27 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 10:54:04 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 10:54:10 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 10:59:53 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:00:01 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+ERROR - 2013-11-20 11:00:01 --> Notice - Undefined variable: subnav in D:\xampp\htdocs\store-dev\fuel\app\modules\admin\views\template\top_menu.php on line 12
+WARNING - 2013-11-20 11:00:20 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:00:53 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:00:54 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:01:03 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:01:05 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:01:14 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:01:16 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:08:25 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:08:28 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:08:29 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:09:15 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:09:17 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:10:10 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:12:16 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:12:18 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:12:18 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:13:05 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:17:09 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+ERROR - 2013-11-20 11:17:09 --> Error - Class 'Admin\Auth' not found in D:\xampp\htdocs\store-dev\fuel\app\modules\admin\classes\controller\users.php on line 95
+WARNING - 2013-11-20 11:17:14 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:17:40 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:22:37 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:22:38 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:22:44 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:27:38 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:27:40 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+ERROR - 2013-11-20 11:27:40 --> Error - Class 'Admin\Auth' not found in D:\xampp\htdocs\store-dev\fuel\app\modules\admin\classes\controller\users.php on line 95
+WARNING - 2013-11-20 11:28:31 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:28:33 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:28:39 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:28:58 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:29:13 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:29:14 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:29:15 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:29:15 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:29:24 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:29:25 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:29:28 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:29:53 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:30:01 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:30:05 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:30:08 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:30:17 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:30:21 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:34:38 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:34:46 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+ERROR - 2013-11-20 11:34:46 --> Error - Class 'Admin\Auth' not found in D:\xampp\htdocs\store-dev\fuel\app\modules\admin\classes\controller\users.php on line 19
+WARNING - 2013-11-20 11:35:08 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+ERROR - 2013-11-20 11:35:09 --> Error - Class 'Admin\View' not found in D:\xampp\htdocs\store-dev\fuel\app\modules\admin\classes\controller\users.php on line 43
+WARNING - 2013-11-20 11:35:14 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:35:16 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:37:24 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+ERROR - 2013-11-20 11:37:25 --> Notice - Undefined variable: title in D:\xampp\htdocs\store-dev\fuel\app\modules\admin\views\users\login.php on line 5
+WARNING - 2013-11-20 11:38:15 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+ERROR - 2013-11-20 11:38:15 --> Notice - Undefined variable: title in D:\xampp\htdocs\store-dev\fuel\app\modules\admin\views\users\login.php on line 14
+WARNING - 2013-11-20 11:38:16 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+ERROR - 2013-11-20 11:38:16 --> Notice - Undefined variable: title in D:\xampp\htdocs\store-dev\fuel\app\modules\admin\views\users\login.php on line 14
+WARNING - 2013-11-20 11:38:17 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+ERROR - 2013-11-20 11:38:17 --> Notice - Undefined variable: title in D:\xampp\htdocs\store-dev\fuel\app\modules\admin\views\users\login.php on line 14
+WARNING - 2013-11-20 11:38:31 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:38:32 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:38:33 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:38:33 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:38:45 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:38:58 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:38:59 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:38:59 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:39:00 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:39:04 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:39:05 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:39:10 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:39:35 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:39:51 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:39:52 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:39:54 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:44:39 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:44:39 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:46:41 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:47:18 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:47:26 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:47:39 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:47:39 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:47:44 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:48:47 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+ERROR - 2013-11-20 11:48:47 --> Error - Class 'Admin\Auth' not found in D:\xampp\htdocs\store-dev\fuel\app\modules\admin\classes\controller\base.php on line 16
+WARNING - 2013-11-20 11:49:00 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:49:55 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:49:56 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:49:58 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:50:00 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:50:00 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:50:02 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:51:19 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:51:21 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:51:21 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:51:22 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:51:44 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:51:44 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:51:46 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:51:51 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:51:51 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:51:57 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:51:57 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:52:04 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:55:07 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:56:17 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 11:57:38 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 13:27:38 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.
+WARNING - 2013-11-20 13:30:14 --> Fuel\Core\Fuel::init - The configured locale ru_RU is not installed on your system.

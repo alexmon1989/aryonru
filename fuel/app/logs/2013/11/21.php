@@ -1,0 +1,7 @@
+<?php defined('COREPATH') or exit('No direct script access allowed'); ?>
+
+ERROR - 2013-11-21 12:17:13 --> Error - SQLSTATE[42S02]: Base table or view not found: 1146 Table 'b130659_aryon.users' doesn't exist with query: "SELECT * FROM `users` WHERE (`username` = 'admin' OR `email` = 'admin') AND `password` = 'abinz8JQd+bUTH/lVkiCEywhwZ/R2HoJToQNZXuqFh8='" in /home/u130659/aryonru/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-11-21 12:17:22 --> Error - SQLSTATE[42S02]: Base table or view not found: 1146 Table 'b130659_aryon.users' doesn't exist with query: "SELECT * FROM `users` WHERE (`username` = 'admin' OR `email` = 'admin') AND `password` = '6uQuowZ7Or4J1kBM/r+vmtO3N6r4ugeGktKKerCahg0='" in /home/u130659/aryonru/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-11-21 12:19:31 --> Error - SQLSTATE[42S02]: Base table or view not found: 1146 Table 'b130659_aryon.users' doesn't exist with query: "SELECT * FROM `users` WHERE (`username` = 'administrator' OR `email` = 'administrator') AND `password` = '2qF67uON1gxgCLlLzL7bcSKF8J61LTVBmDD2jtKQlsg='" in /home/u130659/aryonru/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-11-21 12:33:09 --> Error - Class 'RequestException' not found in /home/u130659/aryonru/fuel/core/classes/request/driver.php on line 6
+ERROR - 2013-11-21 12:34:53 --> Error - Class 'Admin\Response' not found in /home/u130659/aryonru/fuel/app/modules/admin/classes/controller/users.php on line 103
