@@ -10,11 +10,11 @@ class Controller_Cart extends Controller_Base
     /**
      * Индексная старница
      */
-	public function action_index()
-	{
+    public function action_index()
+    {
         // Товары в корзине
         $cart_items = \Cart::items();         
-                
+
         $data['items'] = array();
         foreach($cart_items as $cart_item)
         {   
@@ -33,7 +33,40 @@ class Controller_Cart extends Controller_Base
         }
         $this->template->title = \Lang::get('store.cart');
         $this->template->content = \View::forge('cart/index', $data);
-	}
+    }
+    
+    public function action_enter_details()
+    {
+        if (\Input::method() == 'POST')
+        {
+            
+        }
+        
+        $this->template->title = \Lang::get('store.enter_details');
+        $this->template->content = \View::forge('cart/enter_details');
+    }
+
+
+    public function action_pay()
+    {
+        $mrh_login = "AryonOnline";
+        $mrh_pass1 = "123OLOLO123";
+        $inv_id = 0;
+        $inv_desc = "Техническая документация по ROBOKASSA";
+        $out_summ = "8.96";
+        $crc = md5("$mrh_login:$out_summ:$inv_id:$mrh_pass1");
+        
+        $this->template->title = \Lang::get('store.cart');
+        $this->template->content = \View::forge('cart/pay', array(
+                'mrh_login' => $mrh_login,
+                'mrh_pass1' => $mrh_pass1,
+                'inv_id' => $inv_id,
+                'inv_desc' => $inv_desc,
+                'out_summ' => $out_summ,
+                'crc' => $crc,
+            )
+        );
+    }
 
     // Убирает товар из корзины
     public function action_remove($id = null)

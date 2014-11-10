@@ -18,6 +18,7 @@ return array(
 				9 => '010_create_settings',
 				10 => '011_add_keywordsdescription_to_items_i18n',
 				11 => '012_create_callmes',
+				12 => '013_create_orders',
 			),
 		),
 		'module' => 

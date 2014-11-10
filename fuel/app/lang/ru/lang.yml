@@ -58,6 +58,14 @@ store:
   sorting_by_promotions: Акционные товары
   picture: Изображение
   recalculate_price: Пересчитать стоимость
+  enter_details: Укажите информацию о себе
+  pay: Оплатить товары
+  payment: Оплата
+  username: Фамилия имя отчество
+  telephone: Номер телефона
+  address: Адрес
+  comments: Комментарии к заказу
+  email: E-Mail
   
 callme:
   coordinats: Оставьте свои координаты

@@ -58,6 +58,14 @@ store:
   sorting_by_promotions: Promotions
   picture: Picture
   recalculate_price: Recalculate price
+  enter_details: Enter your details
+  pay: Pay for items
+  payment: Payment
+  username: Name
+  telephone: Telephone
+  address: Address
+  comments: Comments for order
+  email: E-Mail
   
 callme:
   coordinats: Please, give your coordinats
