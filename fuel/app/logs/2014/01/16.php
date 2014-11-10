@@ -1,8 +1,0 @@
-<?php defined('COREPATH') or exit('No direct script access allowed'); ?>
-
-ERROR - 2014-01-16 13:03:42 --> Error - The requested view could not be found: items/categories/_form in /home/u130659/aryonru/fuel/core/classes/view.php on line 388
-ERROR - 2014-01-16 13:06:10 --> 23000 - SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'keywords' cannot be null with query: "INSERT INTO `items_i18n` (`item_id`, `title`, `description`, `keywords`, `search_description`, `language_id`, `created_at`, `updated_at`) VALUES ('9', 'Шахматы осетинские', '<p>Шахматы ручной работы, выполненные из клёна. Фигуры выполнены в традиционном осетинском стиле. В комплекте идёт разборный столик.&nbsp;</p>', null, null, 1, 1389863170, 1389863170)" in /home/u130659/aryonru/fuel/core/classes/database/pdo/connection.php on line 208
-ERROR - 2014-01-16 13:13:47 --> 23000 - SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'keywords' cannot be null with query: "INSERT INTO `items_i18n` (`item_id`, `title`, `description`, `keywords`, `search_description`, `language_id`, `created_at`, `updated_at`) VALUES ('10', '123', '<p>123</p>', null, null, 1, 1389863627, 1389863627)" in /home/u130659/aryonru/fuel/core/classes/database/pdo/connection.php on line 208
-ERROR - 2014-01-16 13:14:20 --> Error - The requested view could not be found: items/categories/_form in /home/u130659/aryonru/fuel/core/classes/view.php on line 388
-ERROR - 2014-01-16 13:39:14 --> Error - Could not find asset: items/ in /home/u130659/aryonru/fuel/core/classes/asset/instance.php on line 249
-ERROR - 2014-01-16 13:46:50 --> Error - Could not find asset: items/ in /home/u130659/aryonru/fuel/core/classes/asset/instance.php on line 249

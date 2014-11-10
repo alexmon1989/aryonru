@@ -1,2 +1,8 @@
-fuel/app/logs/*/*/*
+fuel/app/logs/
+fuel/app/logs/*/
+fuel/app/logs/*/*/
+
 fuel/app/cache/*/*
+
+nbproject/*
+nbproject/*/*
