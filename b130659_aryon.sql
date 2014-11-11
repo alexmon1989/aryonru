@@ -2,18 +2,19 @@
 Navicat MySQL Data Transfer
 
 Source Server         : localhost
-Source Server Version : 50611
+Source Server Version : 50616
 Source Host           : localhost:3306
 Source Database       : aryon
 
 Target Server Type    : MYSQL
-Target Server Version : 50611
+Target Server Version : 50616
 File Encoding         : 65001
 
-Date: 2014-11-10 22:47:24
+Date: 2014-11-11 16:48:18
 */
 
 SET FOREIGN_KEY_CHECKS=0;
+
 -- ----------------------------
 -- Table structure for `articles`
 -- ----------------------------
@@ -491,6 +492,8 @@ INSERT INTO `migration` VALUES ('app', 'default', '010_create_settings');
 INSERT INTO `migration` VALUES ('app', 'default', '011_add_keywordsdescription_to_items_i18n');
 INSERT INTO `migration` VALUES ('app', 'default', '012_create_callmes');
 INSERT INTO `migration` VALUES ('app', 'default', '013_create_orders');
+INSERT INTO `migration` VALUES ('app', 'default', '014_create_orders_items');
+INSERT INTO `migration` VALUES ('app', 'default', '015_add_count_to_orders_items');
 
 -- ----------------------------
 -- Table structure for `orders`
@@ -498,23 +501,42 @@ INSERT INTO `migration` VALUES ('app', 'default', '013_create_orders');
 DROP TABLE IF EXISTS `orders`;
 CREATE TABLE `orders` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) NOT NULL,
-  `telephone` varchar(128) NOT NULL,
-  `email` varchar(64) NOT NULL,
-  `address` varchar(255) NOT NULL,
-  `user_comments` text NOT NULL,
-  `price` float NOT NULL,
-  `currency` varchar(3) NOT NULL,
-  `payed` int(1) NOT NULL DEFAULT '0',
-  `operator_comments` text NOT NULL,
+  `username` varchar(255) DEFAULT NULL,
+  `telephone` varchar(128) DEFAULT NULL,
+  `email` varchar(64) DEFAULT NULL,
+  `address` varchar(255) DEFAULT NULL,
+  `user_comments` text,
+  `price` float DEFAULT NULL,
+  `currency` varchar(3) DEFAULT NULL,
+  `payed` int(1) DEFAULT '0',
+  `operator_comments` text,
   `created_at` int(11) DEFAULT NULL,
   `updated_at` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of orders
 -- ----------------------------
+INSERT INTO `orders` VALUES ('5', 'кенкен', 'кенкен', 'alex.mon1989@gmail.com', 'кенкен', '', '51590', null, '0', null, '1415712910', null);
+
+-- ----------------------------
+-- Table structure for `orders_items`
+-- ----------------------------
+DROP TABLE IF EXISTS `orders_items`;
+CREATE TABLE `orders_items` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `order_id` int(11) NOT NULL,
+  `item_id` int(11) NOT NULL,
+  `count` int(11) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of orders_items
+-- ----------------------------
+INSERT INTO `orders_items` VALUES ('9', '5', '37', '2');
+INSERT INTO `orders_items` VALUES ('10', '5', '19', '1');
 
 -- ----------------------------
 -- Table structure for `settings`
