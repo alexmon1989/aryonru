@@ -115,11 +115,33 @@ class Controller_Cart extends Controller_Base
         if (!empty($cart_items) and \Session::get('order_id'))
         {        
             // Данные заказа
-            $order = \Model_Order::find(\Session::get('order_id'), 
-                                            array('related' => array('orders_items', 'orders_items.item_parent')));
-            
-            var_dump($order->orders_items);
-            
+            $order = \Model_Order::find(\Session::get('order_id'), array(
+                    'related' => array(
+                        'orders_items', 
+                        'orders_items.item_parent', 
+                        'orders_items.item_parent.items_i18n', 
+                        'orders_items.item_parent.items_i18n.item_language'
+                    ),
+                    'where' => array(array('orders_items.item_parent.items_i18n.item_language.value', $this->language))
+                )
+            );           
+            //$data['items'] = array();
+        /*foreach($cart_items as $cart_item)
+        {   
+            // Получаем информацию о товарах в корзине из БД
+            $item = \Model_Items_Item::query()
+                ->related('items_i18n')
+                ->related('items_i18n.item_language')
+                ->where('id', '=', $cart_item->get_id())
+                ->where('items_i18n.item_language.value', '=', $this->language)
+                ->get_one();
+            // Передаём в вид столько товаров, сколько их в корзине
+            for ($i=0; $i < $cart_item->get_qty(); $i++)
+            {
+                $data['items'][] = $item;
+            }
+        }*/
+                        
             $mrh_login = "AryonOnline";
             $mrh_pass1 = "123OLOLO123";
             $inv_id = $order->id;

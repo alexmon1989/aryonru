@@ -56,7 +56,7 @@
     </div><!-- f-row -->
 
     <div class="f-actions">
-        <button type="submit" class="f-bu f-bu-default">Перейти к следующему шагу</button>
+        <button type="submit" class="f-bu f-bu-default"><?php echo Lang::get('store.goto_next_step'); ?></button>
     </div><!-- f-actions -->
     
     <?php echo Form::close(); ?>

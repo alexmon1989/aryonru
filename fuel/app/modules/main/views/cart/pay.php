@@ -11,7 +11,7 @@
 
         <h3><?php echo Lang::get('store.payment'); ?></h3>
 
-        <h4>Еще раз проверьте данные заказа:</h4>
+        <h4><?php echo Lang::get('store.check_data'); ?>:</h4>
 
         <p><?php echo Lang::get('store.username'); ?>: <strong><?php echo $order->username; ?></strong></p>
         <p><?php echo Lang::get('store.telephone'); ?>: <strong><?php echo $order->telephone; ?></strong></p>
@@ -21,38 +21,48 @@
         <p><?php echo Lang::get('store.comments'); ?>: <strong><?php echo $order->user_comments; ?></strong></p>
         <?php endif; ?>
         
+        <?php //var_dump($order) ?>
+        
         <table class="table-cart-items-pay">
-            <caption>Товары</caption>
+            <caption><?php echo Lang::get('store.items'); ?></caption>
             <thead>
                 <tr>
-                    <th>Название</th>
-                    <th>Изображение</th>
-                    <th>Цена</th>
-                    <th>Количество</th>
+                    <th><?php echo Lang::get('store.title'); ?></th>
+                    <th><?php echo Lang::get('store.picture'); ?></th>
+                    <th><?php echo Lang::get('store.price_pay'); ?></th>
+                    <th><?php echo Lang::get('store.count'); ?></th>
                 </tr>
             </thead>
 
             <tbody>
                     <?php foreach ($order->orders_items as $item): ?>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><?php echo current($item->item_parent->items_i18n)->title; ?></td>
+                        <td><?php echo !is_null($item->item_parent->photo_name) ? Asset::img('items/'.$item->item_parent->photo_name, array('height' => 120)) : '<img src="http://dummyimage.com/150x120/c0c0c0&text='. Lang::get('store.noimage') . '" />'; ?></td>
+                        <td><?php echo $item->item_parent->price; ?></td>
+                        <td><?php echo $item->count; ?></td>
                     </tr>
                     <?php endforeach; ?>
             </tbody>
+            <tfoot>
+                <tr>
+                    <th></th>
+                    <th><?php echo Lang::get('store.total_price_pay'); ?></th>
+                    <th><?php echo Cart::total_price(); ?></th>
+                    <th></th>
+                </tr>
+            </tfoot>
         </table>
 
-
-        <form action='http://test.robokassa.ru/Index.aspx' method=POST>
-            <input type=hidden name=MrchLogin value="<?php echo $mrh_login; ?>">
-            <input type=hidden name=OutSum value="<?php echo $out_summ; ?>">
-            <input type=hidden name=InvId value="<?php echo $inv_id; ?>">
-            <input type=hidden name=Desc value="<?php echo $inv_desc; ?>">
-            <input type=hidden name=SignatureValue value="<?php echo $crc; ?>">
-            <?php echo Html::anchor($language.'/cart', 'Нет, неправильно, я хочу изменить данные', array('class' => 'f-bu f-bu-warning')); ?>
-            <input class="f-bu f-bu-default" type=submit value='Всё верно, я хочу оплатить заказ'>
-        </form>
+        <?php echo Form::open(array('action' => 'http://test.robokassa.ru/Index.aspx', 'method' => 'POST')) ?>    
+            <?php echo Form::hidden('MrchLogin', $mrh_login) ?>
+            <?php echo Form::hidden('OutSum', $out_summ) ?>
+            <?php echo Form::hidden('InvId', $inv_id) ?>
+            <?php echo Form::hidden('Desc', $inv_desc) ?>
+            <?php echo Form::hidden('SignatureValue', $crc) ?>
+            
+            <?php echo Html::anchor($language.'/cart', Lang::get('store.wrong_data'), array('class' => 'f-bu f-bu-warning')); ?>
+            <?php echo Form::submit('submit', Lang::get('store.correct_data'), array('class' => 'f-bu f-bu-default')); ?>
+        <?php echo Form::close(); ?>    
     </div>
 </div>

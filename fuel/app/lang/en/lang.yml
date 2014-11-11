@@ -20,6 +20,7 @@ others:
   callme: Call me  
   search: Search
   readmore: Read more
+  share_site: Share site
   
 auth:
   enter: Enter to the site
@@ -68,6 +69,15 @@ store:
   email: E-Mail
   step1: Step 1
   step2: Step 2
+  check_data: Check data once more
+  count: Count
+  price_pay: Price, RUB
+  total_price_pay: Total price, RUB
+  wrong_data: No, I wan't change data
+  correct_data: Yes, it's ok, I wan't to pay
+  items_missing: Items missing
+  remove: Remove
+  goto_next_step: Go to next step
   
 callme:
   coordinats: Please, give your coordinats

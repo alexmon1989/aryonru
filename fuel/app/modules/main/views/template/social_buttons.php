@@ -1,7 +1,7 @@
 <div class="g-row">
     <div class="g-12">
         <div class="social-btns">
-            <span>Понравился сайт - поделись с другом:</span>
+            <span><?php echo Lang::get('others.share_site') ?>:</span>
             <script type="text/javascript">(function() {
             if (window.pluso) if (typeof window.pluso.start == "function") return;
             var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
