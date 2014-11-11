@@ -61,11 +61,13 @@ store:
   enter_details: Укажите информацию о себе
   pay: Оплатить товары
   payment: Оплата
-  username: Фамилия имя отчество
+  username: Фамилия, имя, отчество
   telephone: Номер телефона
   address: Адрес
   comments: Комментарии к заказу
   email: E-Mail
+  step1: Шаг 1
+  step2: Шаг 2
   
 callme:
   coordinats: Оставьте свои координаты

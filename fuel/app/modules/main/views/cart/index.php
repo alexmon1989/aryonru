@@ -50,6 +50,6 @@
     
     <p style="text-align: center">
         <?php echo Html::anchor('#', Lang::get('store.recalculate_price'), array('class' => 'f-bu f-bu-success', 'onclick' => 'location.reload(); return false;')); ?>&nbsp;
-        <?php echo Html::anchor('#', Lang::get('store.goto_pay'), array('class' => 'f-bu f-bu-default')); ?>
+        <?php echo Html::anchor($language.'/cart/enter-details/', Lang::get('store.goto_pay'), array('class' => 'f-bu f-bu-default')); ?>
     </p>
 </div>

@@ -66,6 +66,8 @@ store:
   address: Address
   comments: Comments for order
   email: E-Mail
+  step1: Step 1
+  step2: Step 2
   
 callme:
   coordinats: Please, give your coordinats

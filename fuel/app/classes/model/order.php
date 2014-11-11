@@ -28,5 +28,26 @@ class Model_Order extends \Orm\Model
 		),
 	);
 	protected static $_table_name = 'orders';
+        
+        protected static $_has_many = array(
+            'orders_items' => array(
+                'key_from' => 'id',
+                'model_to' => 'Model_Orders_Item',
+                'key_to' => 'order_id',
+                'cascade_save' => true,
+                'cascade_delete' => true,
+            )
+        );
+        
+        public static function validate($factory)
+	{
+		$val = \Validation::forge($factory);
+		$val->add_field('username', Lang::get('store.username'), 'required|max_length[255]');
+		$val->add_field('telephone', Lang::get('store.telephone'), 'required|max_length[255]');
+		$val->add_field('address', Lang::get('store.address'), 'required|max_length[255]');
+		$val->add_field('email', Lang::get('store.email'), 'required|valid_email|max_length[255]');
+
+		return $val;
+	}
 
 }
