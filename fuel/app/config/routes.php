@@ -19,6 +19,8 @@ return array(
     '(:any)/cart' => 'main/cart',
     '(:any)/cart/enter-details' => 'main/cart/enter_details',
     '(:any)/cart/pay' => 'main/cart/pay',
+    '(:any)/cart/success' => 'main/cart/success',
+    '(:any)/cart/fail' => 'main/cart/fail',
     '(:any)/cart/remove/(:num)' => 'main/cart/remove/$2',
     
     'admin' => 'admin/news/index',

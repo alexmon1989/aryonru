@@ -57,8 +57,11 @@ class Controller_Cart extends Controller_Base
                     {
                         $order = \Model_Order::find(\Session::get('order_id'), 
                                             array('related' => 'orders_items'));
-                        $order->delete();
-                        \Session::delete('order_id');
+                        if ($order)
+                        {
+                            $order->delete();
+                            \Session::delete('order_id');
+                        }
                     }
                     
                     // Создаём заказ в БД
@@ -93,7 +96,7 @@ class Controller_Cart extends Controller_Base
                 }
             }
 
-            $this->template->title = \Lang::get('store.enter_details');
+            $this->template->title = \Lang::get('store.cart');
             $this->template->content = \View::forge('cart/enter_details');
         }
         else
@@ -147,7 +150,9 @@ class Controller_Cart extends Controller_Base
             $inv_id = $order->id;
             $inv_desc = "Оплата товаров с сайта Aryon.ru";
             $out_summ = $order->price;
-            $crc = md5("$mrh_login:$out_summ:$inv_id:$mrh_pass1");
+            $shp_backlanguage = $this->language; // Текущий язык страницы (для дальнейшей работы после оплаты)
+            $crc = md5("$mrh_login:$out_summ:$inv_id:$mrh_pass1:Shp_backlanguage=$shp_backlanguage");
+            $this->language == 'en' ? $culture = 'en' : $culture = 'ru';
             
             $this->template->title = \Lang::get('store.cart');
             $this->template->content = \View::forge('cart/pay', array(
@@ -156,6 +161,9 @@ class Controller_Cart extends Controller_Base
                     'inv_id' => $inv_id,
                     'inv_desc' => $inv_desc,
                     'out_summ' => $out_summ,
+                    'out_summ' => $out_summ,
+                    'culture' => $culture,
+                    'shp_backlanguage' => $shp_backlanguage,
                     'crc' => $crc,
                     'order' => $order,
                 )
@@ -192,4 +200,45 @@ class Controller_Cart extends Controller_Base
         
         \Response::redirect($this->language.'/cart');
     }
+    
+    /**
+     * Страница с сообщением об успехе оплаты
+     */
+    public function action_success()
+    {
+        if (\Session::get('success_pay'))
+        { 
+            \Session::delete('success_pay');
+            $this->template->title = \Lang::get('store.cart');
+            $this->template->content = \View::forge('cart/success', array(
+                    'message' => \Lang::get('store.success_pay')
+                )
+            );
+        }
+        else
+        {
+            \Response::redirect('');
+        }
+    }
+    
+    /**
+     * Страница с сообщением о неудаче оплаты
+     */
+    public function action_fail()
+    {
+        if (\Session::get('fail_pay'))
+        {        
+            \Session::delete('fail_pay');
+            $this->template->title = \Lang::get('store.cart');
+            $this->template->content = \View::forge('cart/fail', array(
+                    'message' => \Lang::get('store.fail_pay')
+                )
+            );
+        }
+        else
+        {
+            \Response::redirect('');
+        }
+    }
+
 }

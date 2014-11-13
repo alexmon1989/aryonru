@@ -78,6 +78,8 @@ store:
   items_missing: Items missing
   remove: Remove
   goto_next_step: Go to next step
+  success_pay: Payment is successfully accomplished. Our managers will contact you soon for more details.
+  fail_pay: Error in payment.
   
 callme:
   coordinats: Please, give your coordinats

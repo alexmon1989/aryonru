@@ -59,7 +59,9 @@
             <?php echo Form::hidden('OutSum', $out_summ) ?>
             <?php echo Form::hidden('InvId', $inv_id) ?>
             <?php echo Form::hidden('Desc', $inv_desc) ?>
+            <?php echo Form::hidden('Culture', $culture) ?>
             <?php echo Form::hidden('SignatureValue', $crc) ?>
+            <?php echo Form::hidden('Shp_backlanguage', $shp_backlanguage) ?>
             
             <?php echo Html::anchor($language.'/cart', Lang::get('store.wrong_data'), array('class' => 'f-bu f-bu-warning')); ?>
             <?php echo Form::submit('submit', Lang::get('store.correct_data'), array('class' => 'f-bu f-bu-default')); ?>
