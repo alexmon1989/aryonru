@@ -21,6 +21,7 @@ return array(
 				12 => '013_create_orders',
 				13 => '014_create_orders_items',
 				14 => '015_add_count_to_orders_items',
+				15 => '016_add_issued_to_orders',
 			),
 		),
 		'module' => 

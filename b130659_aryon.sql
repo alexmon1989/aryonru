@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50616
 File Encoding         : 65001
 
-Date: 2014-11-11 16:48:18
+Date: 2014-11-14 15:22:26
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -494,6 +494,7 @@ INSERT INTO `migration` VALUES ('app', 'default', '012_create_callmes');
 INSERT INTO `migration` VALUES ('app', 'default', '013_create_orders');
 INSERT INTO `migration` VALUES ('app', 'default', '014_create_orders_items');
 INSERT INTO `migration` VALUES ('app', 'default', '015_add_count_to_orders_items');
+INSERT INTO `migration` VALUES ('app', 'default', '016_add_issued_to_orders');
 
 -- ----------------------------
 -- Table structure for `orders`
@@ -510,15 +511,18 @@ CREATE TABLE `orders` (
   `currency` varchar(3) DEFAULT NULL,
   `payed` int(1) DEFAULT '0',
   `operator_comments` text,
+  `issued` int(1) DEFAULT '0',
   `created_at` int(11) DEFAULT NULL,
   `updated_at` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of orders
 -- ----------------------------
-INSERT INTO `orders` VALUES ('5', 'кенкен', 'кенкен', 'alex.mon1989@gmail.com', 'кенкен', '', '51590', null, '0', null, '1415712910', null);
+INSERT INTO `orders` VALUES ('5', 'кенкен', 'кенкен', 'alex.mon1989@gmail.com', 'кенкен', '', '51590', null, '0', null, '0', '1415712910', null);
+INSERT INTO `orders` VALUES ('9', 'Монастырецкий Александр', '+380937740197', 'b130@voliacable.com', 'енгенг', '', '1870', null, '0', null, '0', '1415878751', null);
+INSERT INTO `orders` VALUES ('10', 'Монастырецкий Александр', '12345', 'b130@voliacable.com', 'Адрес 1', 'yu', '1870', null, '0', null, '0', '1415952435', null);
 
 -- ----------------------------
 -- Table structure for `orders_items`
@@ -530,13 +534,15 @@ CREATE TABLE `orders_items` (
   `item_id` int(11) NOT NULL,
   `count` int(11) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of orders_items
 -- ----------------------------
 INSERT INTO `orders_items` VALUES ('9', '5', '37', '2');
 INSERT INTO `orders_items` VALUES ('10', '5', '19', '1');
+INSERT INTO `orders_items` VALUES ('14', '9', '37', '1');
+INSERT INTO `orders_items` VALUES ('15', '10', '37', '1');
 
 -- ----------------------------
 -- Table structure for `settings`
@@ -614,7 +620,7 @@ CREATE TABLE `users` (
 -- ----------------------------
 -- Records of users
 -- ----------------------------
-INSERT INTO `users` VALUES ('1', 'admin', 'ZNyzRBToP3ASC3qtWq8u+bgmioXJ823138mi5CTRZrM=', '1', 'alex.mon1989@gmail.com', '1415652249', 'b7fb8ee01e2472829b534805704676e376451d5b', 'a:0:{}', '1384939358', '1384941000');
+INSERT INTO `users` VALUES ('1', 'admin', 'ZNyzRBToP3ASC3qtWq8u+bgmioXJ823138mi5CTRZrM=', '1', 'alex.mon1989@gmail.com', '1415880452', 'b1a8ea9170f2611d767d66b3fdb61a56d9b48aab', 'a:0:{}', '1384939358', '1384941000');
 
 -- ----------------------------
 -- Table structure for `users_clients`

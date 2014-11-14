@@ -4,7 +4,7 @@
  * Контроллер для управления ответами сервера Robokassa
  */
 class Controller_Robokassa extends Controller_Rest
-{
+{    
     /**
      * ResultURL
      * меняет статус заказа на "оплачено"
@@ -14,7 +14,7 @@ class Controller_Robokassa extends Controller_Rest
        // Проверяем контрольную сумму
         $out_summ = Input::get('OutSum');
         $inv_id = Input::get('InvId');
-        $mrh_pass1 = '123OLOLO123';
+        $mrh_pass1 = Config::get('password_1');
         $shp_backlanguage = Input::get('Shp_backlanguage');
         $crc = md5("$out_summ:$inv_id:$mrh_pass1:Shp_backlanguage=$shp_backlanguage");
         
@@ -22,11 +22,20 @@ class Controller_Robokassa extends Controller_Rest
         if ($crc === Input::get('OutSum'))
         {
             // Меняем статус заказа на "оплачено"
-            $order = Model_Order::find(Input::get('InvId'));
+            $order = \Model_Order::find(Input::get('InvId'));
             if ($order)
             {
                 $order->payed = 1;
                 $order->save();
+                
+                // Посылаем письмо клиенту
+                Config::set('language', $shp_backlanguage);
+                Lang::load('lang.yml');
+                $email = Email::forge();
+                $email->from('info@aryon.ru', 'Aryon.ru');
+                $email->to($order->email, $order->username);
+                $email->html_body(\View::forge('email/template_'.$shp_backlanguage, array('order' => $order)));
+                $email->send();
             }        
 
             \Session::delete('order_id');

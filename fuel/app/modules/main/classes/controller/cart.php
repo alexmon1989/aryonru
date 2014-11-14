@@ -6,7 +6,7 @@ namespace Main;
  * Контроллер для отображения корзины
  */
 class Controller_Cart extends Controller_Base
-{
+{    
     /**
      * Индексная старница
      */
@@ -128,25 +128,9 @@ class Controller_Cart extends Controller_Base
                     'where' => array(array('orders_items.item_parent.items_i18n.item_language.value', $this->language))
                 )
             );           
-            //$data['items'] = array();
-        /*foreach($cart_items as $cart_item)
-        {   
-            // Получаем информацию о товарах в корзине из БД
-            $item = \Model_Items_Item::query()
-                ->related('items_i18n')
-                ->related('items_i18n.item_language')
-                ->where('id', '=', $cart_item->get_id())
-                ->where('items_i18n.item_language.value', '=', $this->language)
-                ->get_one();
-            // Передаём в вид столько товаров, сколько их в корзине
-            for ($i=0; $i < $cart_item->get_qty(); $i++)
-            {
-                $data['items'][] = $item;
-            }
-        }*/
                         
-            $mrh_login = "AryonOnline";
-            $mrh_pass1 = "123OLOLO123";
+            $mrh_login = \Config::get('robokassa_login');
+            $mrh_pass1 = \Config::get('password_1');
             $inv_id = $order->id;
             $inv_desc = "Оплата товаров с сайта Aryon.ru";
             $out_summ = $order->price;
