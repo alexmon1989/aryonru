@@ -26,6 +26,7 @@ class Controller_Robokassa extends Controller_Rest
             if ($order)
             {
                 $order->payed = 1;
+                $order->pay_date = Date::time();
                 $order->save();
                 
                 // Посылаем письмо клиенту

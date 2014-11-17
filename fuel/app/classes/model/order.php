@@ -10,9 +10,10 @@ class Model_Order extends \Orm\Model
 		'address',
 		'user_comments',
 		'price',
-		'currency',
 		'payed',
 		'operator_comments',
+                'issued',
+                'pay_date',
 		'created_at',
 		'updated_at',
 	);
@@ -42,10 +43,10 @@ class Model_Order extends \Orm\Model
         public static function validate($factory)
 	{
 		$val = \Validation::forge($factory);
-		$val->add_field('username', Lang::get('store.username'), 'required|max_length[255]');
-		$val->add_field('telephone', Lang::get('store.telephone'), 'required|max_length[255]');
-		$val->add_field('address', Lang::get('store.address'), 'required|max_length[255]');
-		$val->add_field('email', Lang::get('store.email'), 'required|valid_email|max_length[255]');
+		$val->add_field('username', Lang::get('store.username', array(), 'ФИО клиента'), 'required|max_length[255]');
+		$val->add_field('telephone', Lang::get('store.telephone', array(), 'Телефон'), 'required|max_length[255]');
+		$val->add_field('address', Lang::get('store.address', array(), 'Адрес'), 'required|max_length[255]');
+		$val->add_field('email', Lang::get('store.email', array(), 'E-Mail'), 'required|valid_email|max_length[255]');
 
 		return $val;
 	}

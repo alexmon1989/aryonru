@@ -11,6 +11,9 @@
         <?php echo Asset::js('tinymce_settings.js'); ?>
 	<style>
 		body { margin: 60px; }
+                .navbar .nav > li > a {
+                    padding: 10px 10px;
+                }
 	</style>
 </head>
 <body>

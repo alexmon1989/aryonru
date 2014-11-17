@@ -22,6 +22,8 @@ return array(
 				13 => '014_create_orders_items',
 				14 => '015_add_count_to_orders_items',
 				15 => '016_add_issued_to_orders',
+				16 => '017_add_pay_date_to_orders',
+				17 => '018_delete_currency_from_orders',
 			),
 		),
 		'module' => 

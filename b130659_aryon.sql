@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50616
 File Encoding         : 65001
 
-Date: 2014-11-14 15:22:26
+Date: 2014-11-17 15:48:24
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -156,7 +156,6 @@ INSERT INTO `items` VALUES ('1', '5', '2600', '9d457970ebf889727a3b2445d90b9bf0.
 INSERT INTO `items` VALUES ('2', '4', '21000', 'af7ddc0521dea9485c74787815634919.JPG', '0', '10', '1', '1384190571', '1389960056');
 INSERT INTO `items` VALUES ('3', '4', '31000', 'c36ab2cf6e5944ae96fc1e5a8ae13e13.JPG', '0', '4', '1', '1384199103', '1389960040');
 INSERT INTO `items` VALUES ('4', '5', '600', '442cc851eeed6fb775ef5e7f63a72399.JPG', '0', '0', '1', '1384199289', '1384199428');
-INSERT INTO `items` VALUES ('5', '4', '1000', 'dfa4db3c32038fd54d0a2e10c0afeaa9.JPG', '0', '0', '1', '1384199508', '1384199558');
 INSERT INTO `items` VALUES ('6', '4', '10000', '8978abd1034c58d852cdeb64e3511f74.JPG', '0', '5', '1', '1384199620', '1389960080');
 INSERT INTO `items` VALUES ('7', '4', '15000', 'bee8e17045bed41af67b93047cd88100.JPG', '0', '0', '1', '1384199766', '1384199786');
 INSERT INTO `items` VALUES ('8', '5', '10000', 'f42af784dd12568973e9c816de93b394.JPG', '0', '7', '1', '1384200139', '1389960089');
@@ -495,6 +494,8 @@ INSERT INTO `migration` VALUES ('app', 'default', '013_create_orders');
 INSERT INTO `migration` VALUES ('app', 'default', '014_create_orders_items');
 INSERT INTO `migration` VALUES ('app', 'default', '015_add_count_to_orders_items');
 INSERT INTO `migration` VALUES ('app', 'default', '016_add_issued_to_orders');
+INSERT INTO `migration` VALUES ('app', 'default', '017_add_pay_date_to_orders');
+INSERT INTO `migration` VALUES ('app', 'default', '018_delete_currency_from_orders');
 
 -- ----------------------------
 -- Table structure for `orders`
@@ -508,10 +509,10 @@ CREATE TABLE `orders` (
   `address` varchar(255) DEFAULT NULL,
   `user_comments` text,
   `price` float DEFAULT NULL,
-  `currency` varchar(3) DEFAULT NULL,
   `payed` int(1) DEFAULT '0',
   `operator_comments` text,
   `issued` int(1) DEFAULT '0',
+  `pay_date` int(11) DEFAULT NULL,
   `created_at` int(11) DEFAULT NULL,
   `updated_at` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -520,9 +521,8 @@ CREATE TABLE `orders` (
 -- ----------------------------
 -- Records of orders
 -- ----------------------------
-INSERT INTO `orders` VALUES ('5', 'кенкен', 'кенкен', 'alex.mon1989@gmail.com', 'кенкен', '', '51590', null, '0', null, '0', '1415712910', null);
-INSERT INTO `orders` VALUES ('9', 'Монастырецкий Александр', '+380937740197', 'b130@voliacable.com', 'енгенг', '', '1870', null, '0', null, '0', '1415878751', null);
-INSERT INTO `orders` VALUES ('10', 'Монастырецкий Александр', '12345', 'b130@voliacable.com', 'Адрес 1', 'yu', '1870', null, '0', null, '0', '1415952435', null);
+INSERT INTO `orders` VALUES ('9', 'Монастырецкий Александр', '+380937740197', 'b130@voliacable.com', 'Киев', 'Привет', '1870', '1', null, null, '1415878751', '1415878751', '1416229990');
+INSERT INTO `orders` VALUES ('10', 'Монастырецкий Александр', '12345', 'b130@voliacable.com', 'Адрес 1', 'СРОЧНО!!!', '1870', '1', 'Хороший клиент', null, '1415952435', '1415952435', '1416230053');
 
 -- ----------------------------
 -- Table structure for `orders_items`
@@ -539,8 +539,6 @@ CREATE TABLE `orders_items` (
 -- ----------------------------
 -- Records of orders_items
 -- ----------------------------
-INSERT INTO `orders_items` VALUES ('9', '5', '37', '2');
-INSERT INTO `orders_items` VALUES ('10', '5', '19', '1');
 INSERT INTO `orders_items` VALUES ('14', '9', '37', '1');
 INSERT INTO `orders_items` VALUES ('15', '10', '37', '1');
 
@@ -620,7 +618,7 @@ CREATE TABLE `users` (
 -- ----------------------------
 -- Records of users
 -- ----------------------------
-INSERT INTO `users` VALUES ('1', 'admin', 'ZNyzRBToP3ASC3qtWq8u+bgmioXJ823138mi5CTRZrM=', '1', 'alex.mon1989@gmail.com', '1415880452', 'b1a8ea9170f2611d767d66b3fdb61a56d9b48aab', 'a:0:{}', '1384939358', '1384941000');
+INSERT INTO `users` VALUES ('1', 'admin', 'ZNyzRBToP3ASC3qtWq8u+bgmioXJ823138mi5CTRZrM=', '1', 'alex.mon1989@gmail.com', '1416222391', '0e9ed93a3cc8d294e9f4c8c80f74b3ce56625e54', 'a:0:{}', '1384939358', '1384941000');
 
 -- ----------------------------
 -- Table structure for `users_clients`
