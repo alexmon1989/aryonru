@@ -15,7 +15,7 @@
         <tbody>
                 <?php foreach ($order->orders_items as $item): ?>
                 <tr>
-                    <td><?php echo current($item->item_parent->items_i18n)->title; ?></td>
+                    <td><?php echo Html::anchor('admin/items/edit/'.$item->item_parent->id, current($item->item_parent->items_i18n)->title); ?></td>
                     <td><?php echo !is_null($item->item_parent->photo_name) ? Asset::img('items/'.$item->item_parent->photo_name, array('style' => 'height: 120px')) : '<img src="http://dummyimage.com/150x120/c0c0c0&text='. Lang::get('store.noimage') . '" />'; ?></td>
                     <td><?php echo $item->item_parent->price; ?></td>
                     <td><?php echo $item->count; ?></td>
