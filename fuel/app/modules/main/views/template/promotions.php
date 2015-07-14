@@ -1,6 +1,6 @@
 <div class="g-row">
     <div class="g-12">
-        <div class="promotions">
+        <div class="promotions" style="display: none;">
             <h3><a href="#"><?php echo Lang::get('store.promotions'); ?></a></h3>
             <ul id="carousel-promotions" class="jcarousel-skin-tango">
                 <?php foreach ($promotions as $promotion): ?>
@@ -39,5 +39,6 @@
 <script type="text/javascript">
     $(window).load(function() {
         $('#carousel-promotions').jcarousel({scroll:5 <?php echo count($promotions) > 5 ? ', wrap: \'circular\'' : ''; ?>});
+        $('.promotions').show();
     });
 </script>
