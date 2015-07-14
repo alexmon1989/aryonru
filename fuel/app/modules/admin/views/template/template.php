@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <base href="<?php echo Uri::base(false); ?>">
 	<meta charset="utf-8">
 	<title><?php echo $title; ?></title>
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<?php echo Asset::css('bootstrap.css'); ?>
 	<?php echo Asset::css('bootstrap-responsive.css'); ?>
         <?php echo Asset::js('bootstrap.min.js'); ?>
-        <?php echo Asset::js('tinymce/tinymce.min.js'); ?>
-        <?php echo Asset::js('tinymce_settings.js'); ?>
+        <?php //echo Asset::js('tinymce/tinymce.min.js'); ?>
+    <?php echo Asset::js('ckeditor/ckeditor.js'); ?>
+    <?php //echo Asset::js('tinymce_settings.js'); ?>
 	<style>
 		body { margin: 60px; }
+                .navbar .nav > li > a {
+                    padding: 10px 10px;
+                }
 	</style>
 </head>
 <body>
@@ -43,11 +48,12 @@
 		</div>
             
 		<footer>
-			<p class="pull-right">Page rendered in {exec_time}s using {mem_usage}mb of memory.</p>
+            <p class="pull-right">&copy; <?php echo date('Y') ?> Академия Системного Анализа.</p>
+			<!--<p class="pull-right">Page rendered in {exec_time}s using {mem_usage}mb of memory.</p>
 			<p>
 				<a href="http://fuelphp.com">FuelPHP</a> is released under the MIT license.<br>
 				<small>Version: <?php echo e(Fuel::VERSION); ?></small>
-			</p>
+			</p>-->
 		</footer>
 	</div>
 </body>

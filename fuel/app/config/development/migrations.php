@@ -18,6 +18,12 @@ return array(
 				9 => '010_create_settings',
 				10 => '011_add_keywordsdescription_to_items_i18n',
 				11 => '012_create_callmes',
+				12 => '013_create_orders',
+				13 => '014_create_orders_items',
+				14 => '015_add_count_to_orders_items',
+				15 => '016_add_issued_to_orders',
+				16 => '017_add_pay_date_to_orders',
+				17 => '018_delete_currency_from_orders',
 			),
 		),
 		'module' => 

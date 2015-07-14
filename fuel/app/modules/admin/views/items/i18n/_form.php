@@ -12,7 +12,7 @@
 			<?php echo Form::label('Описание', 'description', array('class'=>'control-label')); ?>
 
 			<div class="controls">
-				<?php echo Form::textarea('description', Input::post('description', isset($item_i18n) ? $item_i18n->description : ''), array('class' => 'span8 tinymce', 'rows' => 8, 'placeholder'=>'Описание')); ?>
+				<?php echo Form::textarea('description', Input::post('description', isset($item_i18n) ? $item_i18n->description : ''), array('class' => 'span8 ckeditor', 'rows' => 8, 'placeholder'=>'Описание')); ?>
 
 			</div>
 		</div>

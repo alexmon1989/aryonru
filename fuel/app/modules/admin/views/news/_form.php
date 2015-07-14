@@ -29,7 +29,7 @@
 			<?php echo Form::label('Текст новости', 'full_text', array('class'=>'control-label')); ?>
 
 			<div class="controls">
-				<?php echo Form::textarea('full_text', Input::post('full_text', isset($article) ? $article->full_text : ''), array('class' => 'span10 tinymce', 'placeholder'=>'Текст новости', 'rows' => 15)); ?>
+				<?php echo Form::textarea('full_text', Input::post('full_text', isset($article) ? $article->full_text : ''), array('class' => 'span10 ckeditor', 'id' => 'ckeditor', 'placeholder'=>'Текст новости', 'rows' => 15)); ?>
 			</div>
 		</div>
         

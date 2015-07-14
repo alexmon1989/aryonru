@@ -20,6 +20,7 @@ others:
   callme: Call me
   search: Search
   readmore: Read more
+  share_site: Share site
   
 auth:
   enter: Enter to the site
@@ -58,6 +59,28 @@ store:
   sorting_by_promotions: Promotions
   picture: Picture
   recalculate_price: Recalculate price
+  enter_details: Enter your details
+  pay: Pay for items
+  payment: Payment
+  username: Name
+  telephone: Telephone
+  address: Address
+  comments: Comments for order
+  email: E-Mail
+  step1: Step 1
+  step2: Step 2
+  check_data: Check data once more
+  count: Count
+  price_pay: Price, RUB
+  total_price_pay: Total price, RUB
+  wrong_data: No, I wan't change data
+  correct_data: Yes, it's ok, I wan't to pay
+  items_missing: Items missing
+  remove: Remove
+  goto_next_step: Go to next step
+  success_pay: Payment is successfully accomplished. Our managers will contact you soon for more details.
+  fail_pay: Error in payment.
+  subject_email: Order payment
   
 callme:
   coordinats: Please, give your coordinats

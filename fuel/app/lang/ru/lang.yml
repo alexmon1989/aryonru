@@ -20,6 +20,7 @@ others:
   callme: Перезвонить мне
   search: Поиск
   readmore: Читать далее
+  share_site: Понравился сайт - поделись с другом
   
 auth:
   enter: Войти на сайт
@@ -58,6 +59,28 @@ store:
   sorting_by_promotions: Акционные товары
   picture: Изображение
   recalculate_price: Пересчитать стоимость
+  enter_details: Укажите информацию о себе
+  pay: Оплатить товары
+  payment: Оплата
+  username: Фамилия, имя, отчество
+  telephone: Номер телефона
+  address: Адрес
+  comments: Комментарии к заказу
+  email: E-Mail
+  step1: Шаг 1
+  step2: Шаг 2
+  check_data: Еще раз проверьте данные заказа
+  count: Количество
+  price_pay: Цена, руб
+  total_price_pay: Общая цена, руб
+  wrong_data: Нет, неправильно, я хочу изменить данные
+  correct_data: Всё верно, я хочу оплатить заказ
+  items_missing: Товары отсутствуют
+  remove: Убрать
+  goto_next_step: Перейти к следующему шагу
+  success_pay: Оплата успешно совершена. Наши менеджеры свяжутся с вами в ближайшее время для уточнения деталей.
+  fail_pay: Ошибка при оплате.
+  subject_email: Оплата заказа
   
 callme:
   coordinats: Оставьте свои координаты

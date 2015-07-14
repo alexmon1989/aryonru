@@ -5,10 +5,10 @@
  * Fuel is a fast, lightweight, community driven PHP5 framework.
  *
  * @package    Fuel
- * @version    1.6
+ * @version    1.7
  * @author     Fuel Development Team
  * @license    MIT License
- * @copyright  2010 - 2013 Fuel Development Team
+ * @copyright  2010 - 2015 Fuel Development Team
  * @link       http://fuelphp.com
  */
 
@@ -27,6 +27,11 @@ return array(
 	 * DB connection, leave null to use default
 	 */
 	'db_connection' => null,
+
+	/**
+	 * DB write connection, leave null to use same value as db_connection
+	 */
+	'db_write_connection' => null,
 
 	/**
 	 * DB table name for the user table
@@ -76,11 +81,16 @@ return array(
 	 * Groups as id => array(name => <string>, roles => <array>)
 	 */
 	'groups' => array(
-		 -1   => array('name' => 'Banned', 'roles' => array('banned')),
-		  0    => array('name' => 'Guests', 'roles' => array()),
-		  1    => array('name' => 'Users', 'roles' => array('user')),
-		  50   => array('name' => 'Moderators', 'roles' => array('user', 'moderator')),
-		  100  => array('name' => 'Administrators', 'roles' => array('user', 'moderator', 'admin')),
+		/**
+		 * Examples
+		 * ---
+		 *
+		 * -1   => array('name' => 'Banned', 'roles' => array('banned')),
+		 * 0    => array('name' => 'Guests', 'roles' => array()),
+		 * 1    => array('name' => 'Users', 'roles' => array('user')),
+		 * 50   => array('name' => 'Moderators', 'roles' => array('user', 'moderator')),
+		 * 100  => array('name' => 'Administrators', 'roles' => array('user', 'moderator', 'admin')),
+		 */
 	),
 
 	/**
@@ -110,7 +120,7 @@ return array(
 	/**
 	 * Salt for the login hash
 	 */
-	'login_hash_salt' => '#123qwe#qwe123#',
+	'login_hash_salt' => 'put_some_salt_in_here',
 
 	/**
 	 * $_POST key for login username

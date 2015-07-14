@@ -68,4 +68,14 @@ class Controller_Main extends Controller_Base
         
         return new \Response(\View::forge('main/show_callme'));
     }
+
+    /**
+     * 404 страница.
+     *
+     * @return \Response
+     */
+    public function action_404()
+    {
+        return new \Response(\View::forge('template/404'));
+    }
 }

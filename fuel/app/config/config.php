@@ -80,7 +80,7 @@ return array(
 	 */
 	 'language'           => 'ru', // Default language
 	 'language_fallback'  => 'en', // Fallback language when file isn't available for default language
-	'locale'             => 'ru_RU', // PHP set_locale() setting, null to not set
+	'locale'             => null, // PHP set_locale() setting, null to not set
 
 	/**
 	 * Internal string encoding charset
@@ -272,7 +272,7 @@ return array(
 		 * );
 		 */
 		 'packages'  => array(
-		 	'orm', 'url_lang', 'auth', 'cart'
+		 	'orm', 'url_lang', 'auth', 'cart', 'email'
 		 ),
 
 		/**
@@ -298,7 +298,7 @@ return array(
 		 * add it like 'session' => 'auth'.
 		 * If you don't want the config in a group use null as groupname.
 		 */
-		// 'config'  => array(),
+		'config'  => array('robokassa' => NULL),
 
 		/**
 		 * Language files to autoload

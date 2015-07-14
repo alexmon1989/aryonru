@@ -116,8 +116,10 @@ class Model_User extends \Orm\Model
                 try
                 {
                     $arr['email'] = $email;
-                    if ($password != '')
+                    if ($password != '') {
+                        $arr['old_password'] = Auth::reset_password($old_username);
                         $arr['password'] = $password;
+                    }
                     
                     $res = $auth->update_user($arr, $old_username);                            
                 }

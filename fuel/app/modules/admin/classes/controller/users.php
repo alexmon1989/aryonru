@@ -13,8 +13,8 @@ class Controller_Users extends Controller_Base
         \View::set_global('subnav', array('users'=> 'active'));
     }
 
-	public function action_login()
-	{
+    public function action_login()
+    {
         // Проверяем была ли уже совершена авторизация
         if (\Auth::check())
         {
@@ -29,7 +29,7 @@ class Controller_Users extends Controller_Base
             {
                 // Не запоминаем
                 \Auth::dont_remember_me();
-
+                
                 // Переадресовіваем на результаты
                 \Response::redirect_back('admin');
             }
@@ -40,7 +40,7 @@ class Controller_Users extends Controller_Base
         }
         
         return new \Response(\View::forge('users/login'));
-	}
+    }
 
     /**
      * Выход
@@ -56,7 +56,7 @@ class Controller_Users extends Controller_Base
     /**
      * Действие для регистрации нового администратора
      */
-	public function action_register()
+    public function action_register()
 	{    
         $auth = \Auth::instance();
         $view = \View::forge('users/register');
@@ -81,13 +81,13 @@ class Controller_Users extends Controller_Base
         $view->set('reg', $form->build(), false);
         $this->template->title = 'Пользователи';
         $this->template->content = $view;
-	}
+    }
 
     /**
      * Действие для редактирования данных админа
      */
-	public function action_edit($id = NULL)
-	{
+    public function action_edit($id = NULL)
+    {
         is_null($id) and \Response::redirect('admin/users');        
         
         $auth = \Auth::instance();
@@ -124,7 +124,7 @@ class Controller_Users extends Controller_Base
         $view->set('admin', $admin);
         $this->template->title = 'Пользователи';
         $this->template->content = $view;
-	}
+    }
 
     /**
      * Действие для отображения списка админов
@@ -142,8 +142,8 @@ class Controller_Users extends Controller_Base
      * 
      * @param int $id id записи в БД
      */
-	public function action_delete($id = null)
-	{            
+    public function action_delete($id = null)
+    {            
         is_null($id) and \Response::redirect('admin/users');
 
         if ($result = \Model_User::find($id))
@@ -159,5 +159,5 @@ class Controller_Users extends Controller_Base
         }
 
         \Response::redirect('admin/users');
-	}
+    }
 }

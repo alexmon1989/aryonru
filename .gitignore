@@ -4,5 +4,5 @@ fuel/app/logs/*/*/
 
 fuel/app/cache/*/*
 
-nbproject/*
-nbproject/*/*
+.idea
+public/.htaccess

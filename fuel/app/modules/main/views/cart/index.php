@@ -36,13 +36,13 @@
                     <td><?php echo !is_null($item->photo_name) ? Asset::img('items/'.$item->photo_name, array('height' => 120)) : '<img src="http://dummyimage.com/150x120/c0c0c0&text='. Lang::get('store.noimage') . '" />'; ?></td>
                     <td><?php echo current($item->items_i18n)->title; ?></td>
                     <td><?php echo $language != 'en' ? $item->price : sprintf('%01.2f', $item->price/Config::get('exchange_rate')); echo ' ' . Lang::get('store.money'); ?></td>
-                    <td><?php echo Html::anchor($language.'/cart/remove/'.$item->id, 'Убрать', array('class' => 'f-bu f-bu-warning')); ?></td>
+                    <td><?php echo Html::anchor($language.'/cart/remove/'.$item->id, Lang::get('store.remove'), array('class' => 'f-bu f-bu-warning')); ?></td>
                 </tr>
                     <?php $i++; ?>
                 <?php endforeach; ?>
             <?php else: ?>
                 <tr>
-                    <td colspan="5" style="text-align: center">Товары отсутствуют</td>
+                    <td colspan="5" style="text-align: center"><?php echo Lang::get('store.items_missing'); ?></td>
                 </tr>
             <?php endif; ?>
         </tbody>
@@ -50,6 +50,6 @@
     
     <p style="text-align: center">
         <?php echo Html::anchor('#', Lang::get('store.recalculate_price'), array('class' => 'f-bu f-bu-success', 'onclick' => 'location.reload(); return false;')); ?>&nbsp;
-        <?php echo Html::anchor('#', Lang::get('store.goto_pay'), array('class' => 'f-bu f-bu-default')); ?>
+        <?php echo Html::anchor($language.'/cart/enter-details/', Lang::get('store.goto_pay'), array('class' => 'f-bu f-bu-default')); ?>
     </p>
 </div>
